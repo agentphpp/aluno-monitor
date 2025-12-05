@@ -125,7 +125,7 @@
 }
   
 .card .botao-saber a{
-     background-color: rgb(145, 157, 170);
+     background-color: rgb(165, 172, 179);
      padding: 10px;
      border-radius: 12px;
      box-shadow: 1px 1px 4px black;
@@ -195,4 +195,77 @@
     background-color: dodgerblue;
     transition: 0.3s;
     scale: calc(1.05);
+}
+ /*Cronograma*/
+.notificacoes {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0 auto;
+}
+
+.jornadas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.jornada-card {
+    width: 200px;
+}
+
+
+.notif-card {
+    
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px #00000020;
+    text-align: left;
+    position: relative;
+}
+
+
+.notif-card .status {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+
+.notif-card.ao-vivo .status {
+    color: red;
+}
+
+.notif-card.agendado .status {
+    color: orange;
+}
+
+.notif-card.finalizado .status {
+    color: green;
+}
+
+
+.btn-assistir {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background-color: rgb(145, 157, 170);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 1px 1px 4px black;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.btn-assistir:hover {
+    background-color: rgb(128, 133, 138);
+    font-weight: bold;
+    transform: scale(1.03);
 }

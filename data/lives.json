@@ -1,0 +1,33 @@
+
+[
+    {
+        "titulo": "Live Aluno Monitor 01",
+        "descricao": "Significado de Aluno Monitor",
+        "status": "live inicial",
+        "link": "https://www.youtube.com/live/uSKY07mqwwA"
+    },
+    {
+        "titulo": "10/04/25 - Aluno Monitor – Encontro 01",
+        "descricao": "Processo de Aluno Monitor",
+        "status": "10 de abr. de 2025",
+        "link": "https://www.youtube.com/live/xAvPIc_8Nds"
+    },
+    {
+        "titulo": "30/07/25 - Formação 8: Aluno Monitor do BEEM 2025",
+        "descricao": "Recaptulação do segundo semestre",
+        "status": "30 de jul. de 2025",
+        "link": "https://www.youtube.com/watch?v=Tq_6zKNcfgw"
+    },
+    {
+        "titulo": "21/08/25 - Formação 8: Aluno Monitor do BEEM 2025",
+        "descricao": "Relatório e bolsas",
+        "status": " 21 de ago. de 2025",
+        "link": "https://www.youtube.com/watch?v=6jAyzisttyk"
+    },
+    {
+        "titulo": "23/10/25 - Formação 10: Aluno Monitor do BEEM 2025",
+        "descricao": "Novidades",
+        "status": " 23/10/25",
+        "link": "https://www.youtube.com/live/BJ-RPdEDkoM"
+    }
+]

@@ -28,31 +28,63 @@
             </ul>
         </nav>
     </header>
-  
+
 
     <main class="conteudo">
-   
-        
+        <h1>Algumas Lives que rolaram...</h1>
+        <section class="notificacoes"></section>
+        <h1>Drive com materiais completos</h1>
+        <a style="background-color: grey; padding: 10px; border-radius: 10px;" href="https://drive.google.com/drive/folders/1woKWZPQ_kfWy4hCup4tbFx5Ge0cr0ymY">Clique aqui</a>
     </main>
 
     <footer class="footer">
         <div class="footer-cima">
             <img src="../img/logosemFundo1.png" alt="Logo">
-            
             <img src="../img/speducação.png" alt="Logo">
             <img src="../img/integral2.png" alt="Logo">
             <p>Uma plataforma criada para ajudar você a aprender melhor.</p>
         </div>
 
-        <div class="social">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-solid fa-envelope"></i>
-            <i class="fa-brands fa-whatsapp"></i>
+    <div class="social" >
+            <a style="color: aliceblue;" href="https://instagram.com/agentphpp" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a style="color: aliceblue;" href="mailto:00001090498317sp@al.educacao.sp.gov.br">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a style="color: aliceblue;"href="https://wa.me/14998372812" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
         </div>
 
         <p class="copy">© 2025 Paulo. Todos os direitos reservados.</p>
     </footer>
 
+    <script>
+        fetch("../data/lives.json")
+            .then(res => res.json())
+            .then(lives => {
+                const container = document.querySelector(".notificacoes");
+
+                lives.forEach(live => {
+                    const card = document.createElement("div");
+                    card.className = `notif-card ${live.status}`;
+
+                    card.innerHTML = `
+                        <h3>${live.titulo}</h3>
+                        <p>${live.descricao}</p>
+                        <span class="status">${live.status.toUpperCase()}</span>
+                        <a class="btn-assistir" href="${live.link}" target="_blank">Assistir</a>
+                    `;
+
+                    container.appendChild(card);
+                });
+            });
+    </script>
+
 </body>
+
 </html>
