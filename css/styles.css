@@ -1,0 +1,198 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+ body {
+     margin: 0;
+     padding: 0;
+     background-color: #f5f5f5;
+     color: black;
+     display: flex;
+     flex-direction: column;
+     font-family: "Inter", sans-serif;
+     text-align: center;
+     height: 100vh;
+     
+
+ }
+
+ header {
+     box-shadow: 1px 1px 1px black;
+     position: sticky;
+     padding: 12px 40px;
+     backdrop-filter: blur(8px);
+     top: 0;
+    
+ }
+
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .logo-area {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     text-align: center;
+     font-weight: bold;
+ }
+
+ .logo-area img {
+
+     width: 70px;
+ }
+
+ nav .menu {
+     display: flex;
+     gap: 20px;
+     justify-content: flex-end;
+     text-align: center;
+
+ }
+
+ nav .menu,
+ li,
+ a {
+     color: black;
+
+     text-decoration: none;
+     list-style: none;
+ }
+
+ nav a:hover {
+     color: rgb(58, 56, 56);
+     font-weight: bold;
+     font-size: 17px;
+     transition: 0.2s;
+ }
+
+
+ 
+ .banner img {
+     width: 100%;
+     height: 380px;
+     object-fit: cover;
+     border-radius: 0 0 20px 20px;
+ }
+
+/* Main organizado verticalmente */
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.primeiros-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+}
+
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px #00000015;
+    width: 100%;
+    max-width: 900px;
+    text-align: left;
+}
+
+
+.segundos-cards {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px #00000015;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.botao-saber{
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px ;
+}
+  
+.card .botao-saber a{
+     background-color: rgb(145, 157, 170);
+     padding: 10px;
+     border-radius: 12px;
+     box-shadow: 1px 1px 4px black;
+     transition: 0.3s;
+}
+.botao-saber a:hover{
+    background-color: rgb(128, 133, 138);
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.sobre{
+    background-color: #c2bebe;
+    text-align: justify;
+    max-width: 60%;
+    border-radius: 10px;
+    padding: 20px;
+   
+}
+
+ footer {
+    margin-top: auto;
+     background-color: black;
+     color: #f5f5f5;
+ }
+
+ .footer-cima img {
+     width: 120px;
+ }
+
+ .social {
+     font-size: 30px;
+
+ }
+
+ .fa-brands,
+ .fa-solid {
+     margin: 3px 5px;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+ .fa-brands:hover,
+ .fa-solid:hover{
+    font-size: 34px;
+    transition: 0.3s;
+ }
+
+
+ /*Matéria*/
+
+ .card-conteudo{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px black;
+    margin: 0 15px;
+    padding: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.matematica:hover{
+    background-color: crimson;
+    transition: 0.3s;
+    scale: calc(1.05);
+}
+.portugues:hover{
+    background-color: dodgerblue;
+    transition: 0.3s;
+    scale: calc(1.05);
+}
