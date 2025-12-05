@@ -30,11 +30,15 @@
     </header>
 
     <main class="conteudo">
-        <h1>Gramática: Regência e Concordância</h1>
+        <h1>Tire duvidas de Português</h1>
 
         <p>Tire dúvidas de português e analise exemplos com a galera.</p>
+        <div class="comentar">
+        <button class="btn-comentar"><p>Comente Algo!</p></button>
+        </div>
+        <div id="comentarios">
 
-      <div id="comentarios"></div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -56,6 +60,34 @@
         <p class="copy">© 2025 Paulo. Todos os direitos reservados.</p>
     </footer>
 
+    <script>
+        fetch("../../data/comentarios2.json")
+            .then(res => res.json())
+            .then(comentarios => {
+                const container = document.querySelector("#comentarios");
+
+                comentarios.forEach(comentarios => {
+                    const card = document.createElement("div");
+                    card.className = `card`;
+
+                    card.innerHTML = `
+                        <h3>${comentarios.usuario2}</h3>
+                        <p>${comentarios.descricao2}</p>
+    
+                        <div style="display:flex; align-items: center;">
+
+                        <img src="https://img.icons8.com/?size=100&id=28sIKIurMBkT&format=png&color=000000" style="width:30px; height:30px; margin: 0 10px;">
+                        <p>${comentarios.likes2}</p>
+                        </div>
+                        
+                        <p style="border: black 1px solid; padding: 15px; border-radius:10px;">Responder</p>
+                    `;
+
+                    container.appendChild(card);
+                    card.style.margin = '20px'
+                });
+            });
+    </script>
 </body>
 
 

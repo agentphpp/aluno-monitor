@@ -30,11 +30,17 @@
     </header>
 
 <main class="conteudo">
-    <h1>Dúvidas de Função Quadrática</h1>
+    <h1>Dúvidas de Matemática</h1>
     <p>Use esta página para perguntar, responder e discutir problemas sobre função quadrática.</p>
+    
+   <div class="comentar">
+        <button class="btn-comentar"><p>Comente Algo!</p></button>
+    </div>
+    <div id="comentarios">
+        
+    </div>
 
-   
-    <div id="comentarios"></div>
+    
 </main>
 
 
@@ -58,7 +64,34 @@
         <p class="copy">© 2025 Paulo. Todos os direitos reservados.</p>
     </footer>
 
-</body>
+    <script>
+        fetch("../../data/comentarios.json")
+            .then(res => res.json())
+            .then(comentarios => {
+                const container = document.querySelector("#comentarios");
 
+                comentarios.forEach(comentarios => {
+                    const card = document.createElement("div");
+                    card.className = `card`;
+
+                    card.innerHTML = `
+                        <h3>${comentarios.usuario}</h3>
+                        <p>${comentarios.descricao}</p>
+                        ${comentarios.imagem}
+                        <div style="display:flex; align-items: center;">
+
+                        <img src="https://img.icons8.com/?size=100&id=28sIKIurMBkT&format=png&color=000000" style="width:30px; height:30px; margin: 0 10px;">
+                        <p>${comentarios.likes}</p>
+                        </div>
+                        
+                        <p style="border: black 1px solid; padding: 15px; border-radius:10px;">Responder</p>
+                    `;
+
+                    container.appendChild(card);
+                });
+            });
+    </script>
+</body>
+      
 
 </html>
