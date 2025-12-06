@@ -97,7 +97,7 @@ function materias(materia){
             card.className = "jornada-card";
    
            card.innerHTML = `
-           <a href="cursoM.html" class="card-conteudo matematica">
+           <a href="curso/cursoM.html" class="card-conteudo matematica">
                <h3>Jornada ${i}</h3>
            </a>
        `;
@@ -113,7 +113,7 @@ function materias(materia){
             card.className = "jornada-card";
 
             card.innerHTML = `
-            <a href="cursoP.html" class="card-conteudo portugues">
+            <a href="curso/cursoP.html" class="card-conteudo portugues">
                <h3>Jornada ${i}</h3>
            </a>
         `;
@@ -123,3 +123,8 @@ function materias(materia){
     }
 }
 
+//etapas materias
+
+function Etapa(){
+    
+}
