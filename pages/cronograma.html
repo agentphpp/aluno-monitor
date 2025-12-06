@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="../js/script.js"></script>
 </head>
 
 <body>
@@ -63,27 +64,7 @@
         <p class="copy">© 2025 Paulo. Todos os direitos reservados.</p>
     </footer>
 
-    <script>
-        fetch("../data/lives.json")
-            .then(res => res.json())
-            .then(lives => {
-                const container = document.querySelector(".notificacoes");
-
-                lives.forEach(live => {
-                    const card = document.createElement("div");
-                    card.className = `notif-card ${live.status}`;
-
-                    card.innerHTML = `
-                        <h3>${live.titulo}</h3>
-                        <p>${live.descricao}</p>
-                        <span class="status">${live.status.toUpperCase()}</span>
-                        <a class="btn-assistir" href="${live.link}" target="_blank">Assistir</a>
-                    `;
-
-                    container.appendChild(card);
-                });
-            });
-    </script>
+   <script>Cronograma()</script>
 
 </body>
 

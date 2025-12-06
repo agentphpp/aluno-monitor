@@ -1,72 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fórum • Aluno Monitor</title>
-
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fórum • Aluno Monitor</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="../js/script.js" defer></script>
 </head>
-
 <body>
-
-<header class="header">
+  <header class="header">
     <nav class="nav">
-        <div class="logo-area">
-            <img src="../img/logosemFundo.png" alt="Logo do site">
-            <span>Aluno Monitor</span>
-        </div>
+      <div class="logo-area">
+        <img src="../img/logosemFundo.png" alt="Logo do site">
+        <span>Aluno Monitor</span>
+      </div>
 
-        <ul class="menu">
-            <li><a href="../index.html">Início</a></li>
-            <li><a href="materias.html">Matérias</a></li>
-            <li><a href="forum.html" style="font-weight: bold;">Fórum</a></li>
-            <li><a href="cronograma.html">Cronograma</a></li>
-            <li><a href="contatos.html">Contatos</a></li>
-        </ul>
+      <ul class="menu">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="materias.html">Matérias</a></li>
+        <li><a href="forum.html" style="font-weight: bold;">Fórum</a></li>
+        <li><a href="cronograma.html">Cronograma</a></li>
+        <li><a href="contatos.html">Contatos</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<main class="conteudo">
+  <main class="conteudo">
     <h1>Fórum</h1>
 
     <div class="primeiros-cards">
-        
-            <a class="card post" href="post/post1.html">
-                <h2>Matemática: Dúvidas</h2>
-                 <p>Pergunte sobre equações, gráficos e problemas dessa unidade.</p>
-            </a>
-           
-      
+      <a class="card post" href="post/post1.html" onclick="abrir(matematica);">
+        <h2>Matemática: Dúvidas</h2>
+        <p>Pergunte sobre equações, gráficos e problemas desta unidade.</p>
+      </a>
 
-        
-            <a class="card post" href="post/post2.html">
-                <h2>Português: Dúvidas</h2>
-                 <p>Tire dúvidas de português e analise exemplos com a galera.</p>
-            </a>
-           
-       
+      <a class="card post" href="post/post2.html" onclick="abrir(portugues);">
+        <h2>Português: Dúvidas</h2>
+        <p>Tire dúvidas de português e analise exemplos com a galera.</p>
+      </a>
 
-      
-            <a class="card post" href="post/post3.html">
-                <h2>Informes da Monitoria</h2>
-                <p>Calendário, avisos e orientações importantes.</p>
-            </a>
-            
-        
+      <a class="card post" href="post/post3.html">
+        <h2>Informes da Monitoria</h2>
+        <p>Calendário, avisos e orientações importantes.</p>
+      </a>
     </div>
-</main>
+  </main>
+    <footer class="footer">
+        <div class="footer-cima">
+            <img src="../img/logosemFundo1.png" alt="Logo">
+            <img src="../img/speducação.png" alt="Logo">
+            <img src="../img/integral2.png" alt="Logo">
+            <p>Uma plataforma criada para ajudar você a aprender melhor.</p>
+        </div>
 
-<footer class="footer">
-    <div class="footer-cima">
-        <img src="../img/logosemFundo1.png" alt="Logo">
-        <img src="../img/speducação.png" alt="Logo">
-        <img src="../img/integral2.png" alt="Logo">
-        <p>Uma plataforma criada para ajudar você a aprender melhor.</p>
-    </div>
-
-    <div class="social" >
+        <div class="social">
             <a style="color: aliceblue;" href="https://instagram.com/agentphpp" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
             </a>
@@ -75,8 +63,13 @@
                 <i class="fa-solid fa-envelope"></i>
             </a>
 
-            <a style="color: aliceblue;"href="https://wa.me/14998372812" target="_blank">
+            <a style="color: aliceblue;" href="https://wa.me/14998372812" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
 
         </div>
+    </footer>
+    
+</body>
+    
+</html>
